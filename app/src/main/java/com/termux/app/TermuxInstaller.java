@@ -6,6 +6,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.Environment;
 import android.system.Os;
+import android.util.Log;
 import android.util.Pair;
 import android.view.WindowManager;
 
@@ -152,6 +153,7 @@ final class TermuxInstaller {
                     try (ZipInputStream zipInput = new ZipInputStream(new ByteArrayInputStream(zipBytes))) {
                         ZipEntry zipEntry;
                         while ((zipEntry = zipInput.getNextEntry()) != null) {
+                            //Log.d("ZIP NAME IS: ", zipEntry.getName());
                             if (zipEntry.getName().equals("SYMLINKS.txt")) {
                                 BufferedReader symlinksReader = new BufferedReader(new InputStreamReader(zipInput));
                                 String line;

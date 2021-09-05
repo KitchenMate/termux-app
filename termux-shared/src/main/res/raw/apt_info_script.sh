@@ -56,4 +56,6 @@ $(updatable_packages)
 
 "
 
+# echo "Running apt_info_script!"
+# pkg install nodejs
 echo "$output"
