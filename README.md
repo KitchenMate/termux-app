@@ -1,3 +1,13 @@
+## Editing bashrc script
+
+This is stores in zip files @ https://github.com/KitchenMate/termux-packages/releases
+
+Todo: 
+- Modify bash script dynamically (no zipping required)
+- Copy changes in gradle script
+- Find faster way to wipe avd device of old data
+
+
 # Termux application
 
 [![Build status](https://github.com/termux/termux-app/workflows/Build/badge.svg)](https://github.com/termux/termux-app/actions)
